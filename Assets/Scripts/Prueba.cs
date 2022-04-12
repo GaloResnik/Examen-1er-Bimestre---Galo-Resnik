@@ -54,7 +54,7 @@ public class Prueba : MonoBehaviour
         {
             preciodesc3 = precioprod3;
         }
-        float montodesc = (precioprod1 + precioprod2 + precioprod3) - (preciodesc1 + preciodesc2 + preciodesc3);
+        float montodesc = (precioprod1 * cantidadprod1 + precioprod2 * cantidadprod2 + precioprod3 * cantidadprod3) - (preciodesc1 * cantidadprod1 + preciodesc2 * cantidadprod2 + preciodesc3 * cantidadprod3);
 
         //El programa debe devolver el total de la compra de los tres productos mostrando un mensaje que incluya el monto total
         //sin descuento, el monto de los descuentos aplicados y el total con los descuentos aplicados.
@@ -64,27 +64,27 @@ public class Prueba : MonoBehaviour
         }
         if (precioprod1 < 1)
         {
-            Debug.Log("Error: El precio del " + nombreprod1 " es 0");
+            Debug.Log("Error: El precio del " + nombreprod1 + " es 0");
         }
         if (precioprod2 < 1)
         {
-            Debug.Log("Error: El precio del " + nombreprod2 " es 0");
+            Debug.Log("Error: El precio del " + nombreprod2 + " es 0");
         }
         if (precioprod3 < 1)
         {
-            Debug.Log("Error: El precio del producto 3 es 0");
+            Debug.Log("Error: El precio del " + nombreprod3 + " es 0");
         }
         if (cantidadprod1 < 1)
         {
-            Debug.Log("Error: La cantidad deseada del producto 1 es 0");
+            Debug.Log("Error: La cantidad deseada del " + nombreprod1 + " es 0");
         }
         if (cantidadprod2 < 1)
         {
-            Debug.Log("Error: La cantidad deseada del producto 2 es 0");
+            Debug.Log("Error: La cantidad deseada del " + nombreprod2 + " es 0");
         }
         if (cantidadprod3 < 1)
         {
-            Debug.Log("Error: La cantidad deseada del producto 3 es 0");
+            Debug.Log("Error: La cantidad deseada del " + nombreprod3 + " es 0");
         }
 
     }
